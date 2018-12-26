@@ -1,8 +1,12 @@
 {
     "common": {
         "name": "octoprint",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "news": {
+            "0.0.2": {
+                "en": "png url corrected",
+                "de": "png url korrigiert"
+            },
             "0.0.1": {
                 "en": "initial adapter",
                 "de": "Initiale Version"
@@ -29,7 +33,7 @@
         "icon": "octoprint.png",
         "materialize": true,
         "enabled": true,
-        "extIcon": "https://github.com/turbolift/ioBroker.octoprint/master/admin/octoprint.png",
+        "extIcon": "https://raw.githubusercontent.com/turbolift/ioBroker.octoprint/master/admin/octoprint.png",
         "keywords": ["octoprint"],
         "license": "MIT",
         "readme": "https://github.com/turbolift/ioBroker.octoprint/blob/master/README.md",
