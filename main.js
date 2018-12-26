@@ -285,7 +285,11 @@ function buildRequest(service, callback, data)
             } else if (error) {
                 adapter.log.error(error);
             } else {
-                adapter.log.error('Status Code: ' + response.statusCode + ' / Content: ' + content);
+                if ("Printer is not operational" == content) {
+                    adapter.log.info('Status Code: ' + response.statusCode + ' / Content: ' + content);
+                } else {
+                    adapter.log.error('Status Code: ' + response.statusCode + ' / Content: ' + content);
+                }
             }
         }
     );
